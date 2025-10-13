@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Elements Example</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+        }
+        header, nav, footer {
+            background-color: #005f73;
+            color: #f0fdfa;
+            padding: 15px 25px;
+        }
+        nav a {
+            color: #f0fdfa;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            padding: 25px;
+        }
+        article {
+            flex: 3;
+            padding: 25px;
+            background-color: #e8f1f2;
+        }
+        aside {
+            flex: 1;
+            padding: 25px;
+            background-color: #c2dbdc;
+        }
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+        figcaption {
+            font-style: italic;
+            font-size: 0.85em;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+        }
+        .highlight {
+            color: #00798c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tech Insights Blog</h1>
+    </header>
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Resources</a>
+        <a href="#">Support</a>
+    </nav>
+    
+    <main>
+        <article>
+            <h2>Exploring HTML5 Semantic Elements</h2>
+            <p>
+                The <span class="highlight">HTML5</span> semantic tags help developers create web pages that are easier to interpret by browsers and assistive technologies.
+            </p>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS42mLmplAxQ36q9WBvEA07K7b_llfX0FUYFg&s"
+                    alt="Semantic Elements Diagram" height="200" width="280">
+                <figcaption>Diagram showing HTML5 semantic structure</figcaption>
+            </figure>
+            <section>
+                <h3>Benefits of Semantic Tags</h3>
+                <p>They improve SEO, accessibility, and code maintainability by giving meaningful context to web content.</p>
+            </section>
+            <div>
+                <p>This example uses a <span style="font-weight: bold;">div</span> to group unrelated content for layout and styling convenience.</p>
+            </div>
+        </article>
+        <aside>
+            <h3>Popular Articles</h3>
+            <ul>
+                <li><a href="#">Mastering CSS Grid</a></li>
+                <li><a href="#">JavaScript ES6 Features</a></li>
+                <li><a href="#">Web Accessibility Tips</a></li>
+            </ul>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Tech Insights. All rights reserved.</p>
+    </footer>
+</body>
+</html>

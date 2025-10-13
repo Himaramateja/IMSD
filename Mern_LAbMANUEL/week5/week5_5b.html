@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Styling Example</title>
+
+  <!-- Internal CSS -->
+  <style>
+    .internal-box {
+      background-color: lightcyan;
+      border: 3px dotted navy;
+      padding: 20px;
+    }
+  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1 style="color: teal; font-size: 36px;">Inline Styled Heading (h1)</h1>
+
+  <div class="internal-box">
+    This container is styled using <strong>internal CSS</strong>.
+  </div>
+
+  <br>
+
+  <h2>Internal Styled Heading (h2)</h2>
+  <p class="external-paragraph">
+    This is a paragraph styled with <strong>external CSS</strong>.
+  </p>
+</body>
+</html>

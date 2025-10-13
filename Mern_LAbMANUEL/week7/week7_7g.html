@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document Object Properties Example</title>
+  <script>
+    function displayDocDetails() {
+      // Getting document-related details
+      let info = {
+        title: document.title,
+        url: document.URL,
+        domain: document.domain,
+        modified: document.lastModified,
+        charset: document.charset
+      };
+
+      // Displaying details in HTML
+      document.getElementById("docTitle").textContent = "Page Title: " + info.title;
+      document.getElementById("docURL").textContent = "Page URL: " + info.url;
+      document.getElementById("docDomain").textContent = "Domain Name: " + info.domain;
+      document.getElementById("docModified").textContent = "Last Updated On: " + info.modified;
+      document.getElementById("docCharset").textContent = "Character Encoding: " + info.charset;
+
+      // Changing style dynamically using document method
+      document.getElementById("infoBox").style.color = "darkblue";
+      document.getElementById("infoBox").style.fontWeight = "bold";
+    }
+  </script>
+</head>
+<body>
+  <h2>Working with Document Object in JavaScript</h2>
+  <button onclick="displayDocDetails()">Display Document Information</button>
+  
+  <div id="infoBox" style="margin-top: 20px;">
+    <p id="docTitle"></p>
+    <p id="docURL"></p>
+    <p id="docDomain"></p>
+    <p id="docModified"></p>
+    <p id="docCharset"></p>
+  </div>
+</body>
+</html>
